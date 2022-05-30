@@ -1,0 +1,334 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+
+	<div class="body">
+		<style>
+			.bg_home {
+				background-image: url('assets/bg_blue3.jpg');
+				background-size: 100%;
+			}
+		</style>
+		<div class="bg_home">
+			<section class="container" id="call">
+				<h1 id="titre_call">
+					Depasse tes limites
+					<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-lightning" viewbox="0 0 16 16" style="color:#EFE356;">
+						<path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+					</svg>
+				</h1>
+				<h1 id="titre_call_ombre">Depasse tes limites</h1>
+				<br>
+				<button class="btn btn-dark" id="btn_call">En savoir plus</button>
+			</section>
+		</div>
+
+		<!---->
+		<style>
+			.div_slogan {
+				background-image: url('assets/bg_white.jpg');
+				background-size: 100%;
+			}
+		</style>
+		<div class="div_slogan">
+			<br><br>
+			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-down-fill" viewbox="0 0 16 16" style="color: #EFE356;">
+				<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+			</svg>
+			<h1 class="slogan">
+				Imaginez
+				<br>votre meilleur corps<br><span class="slogan text-info">et atteignez-le</span>
+				!
+			</h1>
+
+			<h2 class="div_adj">
+				Rigueur
+				<svg class="adj" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-right" viewbox="0 0 16 16">
+					<path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				Convivialite
+				<svg class="adj" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-right" viewbox="0 0 16 16">
+					<path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+				</svg>
+				Reactivite
+			</h2>
+			<h2 class="div_adj_2">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stopwatch-fill" viewbox="0 0 16 16">
+					<path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+				</svg>
+
+				<svg id="adj_center" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-hearts" viewbox="0 0 16 16">
+					<path fill-rule="evenodd" d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z"/>
+				</svg>
+
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-speedometer" viewbox="0 0 16 16">
+					<path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+					<path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+				</svg>
+			</h2>
+		</div>
+
+		<!--->
+		<!-->
+		<div style="height:30px;width:100%;background-color:white;border-top: solid 3px #262626;transform:rotate(2deg);"></div>
+
+		<!---SERVICES-->
+		<div class="div_services">
+
+			<h1 id="titre_service">
+				<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-lightning" viewbox="0 0 16 16" style="color:#EFE356;">
+					<path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+				</svg>
+				Mes
+				<a class="text-info" id="idees_effect">services</a>
+			</h1>
+
+			<br>
+			<!-- Pills navs -->
+			<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link active bg-nav-item" id="ex3-tab-1" data-mdb-toggle="pill" href="#ex3-pills-1" role="tab" aria-controls="ex3-pills-1" aria-selected="true">
+						Perte de poids
+					</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link bg-nav-item" id="ex3-tab-2" data-mdb-toggle="pill" href="#ex3-pills-2" role="tab" aria-controls="ex3-pills-2" aria-selected="false">
+						Prise de masse
+					</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link bg-nav-item" id="ex3-tab-3" data-mdb-toggle="pill" href="#ex3-pills-3" role="tab" aria-controls="ex3-pills-3" aria-selected="false">
+						Preparation physique
+					</a>
+				</li>
+			</ul>
+			<!-- Pills navs -->
+
+			<!-- Pills content -->
+			<div class="tab-content" id="ex2-content">
+				<div
+					class="tab-pane fade show active" id="ex3-pills-1" role="tabpanel" aria-labelledby="ex3-tab-1">
+					<!--CARD-->
+					<div class="card carte-service">
+						<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+							<a href="#!">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Perte de poids</h5>
+							<p class="card-text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse amet.
+							</p>
+							<a href="#!" class="btn btn-dark">Me contacter</a>
+						</div>
+					</div>
+
+					<section class="card-descr">
+						<p class="descr-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident a asperiores corporis ad, rerum et autem sit iure voluptatum ullam minus numquam, ipsa assumenda debitis officiis ea accusantium labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sunt in voluptatibus minus officia necessitatibus sequi quo nihil tenetur ab ut quas exercitationem pariatur numquam quisquam dicta laborum. Labore, quas!
+																																																																																																																																																																																																																																																																																																																																																							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident a asperiores corporis ad, rerum et autem sit iure voluptatum ullam minus numquam, ipsa assumenda debitis officiis ea accusantium labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sunt in voluptatibus minus officia necessitatibus sequi quo nihil tenetur.
+
+						</p>
+					</section>
+					<!--CARD-->
+
+				</div>
+				<div
+					class="tab-pane fade" id="ex3-pills-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+					<!--CARD-->
+					<div class="card carte-service">
+						<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+							<a href="#!">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Prise de masse</h5>
+							<p class="card-text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse amet.
+							</p>
+							<a href="#!" class="btn btn-dark">Me contacter</a>
+						</div>
+					</div>
+
+					<section class="card-descr">
+						<p class="descr-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident a asperiores corporis ad, rerum et autem sit iure voluptatum ullam minus numquam, ipsa assumenda debitis officiis ea accusantium labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sunt in voluptatibus minus officia necessitatibus sequi quo nihil tenetur ab ut quas exercitationem pariatur numquam quisquam dicta laborum. Labore, quas!
+																																																																																																																																																																																																																																																																																																																																																Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident a asperiores corporis ad, rerum et autem sit iure voluptatum ullam minus numquam, ipsa assumenda debitis officiis ea accusantium labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sunt in voluptatibus minus officia necessitatibus sequi quo nihil tenetur.
+
+						</p>
+					</section>
+					<!--CARD-->
+				</div>
+				<div
+					class="tab-pane fade" id="ex3-pills-3" role="tabpanel" aria-labelledby="ex3-tab-3">
+					<!--CARD-->
+					<div class="card carte-service">
+						<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+							<a href="#!">
+								<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Preparation physique</h5>
+							<p class="card-text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse amet.
+							</p>
+							<a href="#!" class="btn btn-dark">Me contacter</a>
+						</div>
+					</div>
+
+					<section class="card-descr">
+						<p class="descr-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident a asperiores corporis ad, rerum et autem sit iure voluptatum ullam minus numquam, ipsa assumenda debitis officiis ea accusantium labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sunt in voluptatibus minus officia necessitatibus sequi quo nihil tenetur ab ut quas exercitationem pariatur numquam quisquam dicta laborum. Labore, quas!
+																																																																																																																																																																																																																																																																																																																																																							Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident a asperiores corporis ad, rerum et autem sit iure voluptatum ullam minus numquam, ipsa assumenda debitis officiis ea accusantium labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sunt in voluptatibus minus officia necessitatibus sequi quo nihil tenetur.
+
+						</p>
+					</section>
+					<!--CARD-->
+				</div>
+			</div>
+			<!-- Pills content -->
+		</div>
+		<!---FIN SERVICES-->
+
+		<div style="margin-top:130px;height:70px;width:102%;background-color:#262626;border-top: solid 3px #262626;transform:rotate(2deg);margin-left:-3px;"></div>
+		<!--PROGRAMMES-->
+		<div class="div_programmes">
+			<h1 id="titre_prog_deux">
+				<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-lightning" viewbox="0 0 16 16" style="color:#EFE356;">
+					<path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+				</svg>
+				Mes
+				<a class="text-info" id="idees_effect">programmes</a>
+			</h1><br>
+
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col carte-prog">
+					<div class="card h-100">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers"/>
+						<div class="card-body">
+							<h5 class="card-title">Cours collectifs</h5>
+							<p class="card-text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse amet.
+							</p>
+							<button class="btn btn-dark">Commander</button>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+							</small>
+						</div>
+					</div>
+				</div>
+				<div class="col carte-prog">
+					<div class="card h-100">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+						<div class="card-body">
+							<h5 class="card-title">Cours individuels</h5>
+							<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse amet.</p>
+							<button class="btn btn-dark">Commander</button>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+							</small>
+						</div>
+					</div>
+				</div>
+				<div class="col carte-prog">
+					<div class="card h-100">
+						<img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+						<div class="card-body">
+							<h5 class="card-title">Nutrition</h5>
+							<p class="card-text">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, esse amet.																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														          that equal height action.
+							</p>
+							<button class="btn btn-dark">Commander</button>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewbox="0 0 16 16">
+									<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+								</svg>
+							</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--FIN PROGRAMMES-->
+
+		<div>
+			<div style="display:flex;justify-content:center;margin-top:50px;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-caret-down-fill" viewbox="0 0 16 16" style="color: #EFE356;">
+					<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+				</svg>
+			</div>
+
+			<h1 id="idees_menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-lightning" viewbox="0 0 16 16" style="color:#EFE356;">
+					<path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z"/>
+				</svg>
+
+				Des
+				<a class="text-info" id="idees_effect">cadeaux</a>
+			</h1><br>
+		</div>
+
+		<!--EBOOK-->
+		<div class="div_ebook">
+			<h1 id="titre_ebook">
+				E-book reequilibrage alimentaire
+			</h1>
+			<h1 id="subtitre_ebook">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-egg-fried" viewbox="0 0 16 16" style="color:#262626;">
+					<path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+					<path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+				</svg>
+				30 jours
+			</h1>
+
+			<img src="assets/food.png" alt="" style="float:left;margin-top:-65px;margin-left:-150px;">
+
+			<br><br><br>
+			<button class="btn btn-dark dl">
+				Telecharger
+				<svg style="margin-top:-5px;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="text-info bi bi-file-earmark-arrow-down-fill" viewbox="0 0 16 16">
+					<path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+				</svg>
+			</button>
+		</div>
+		<!--FIN-EBOOK-->
+
+	</div>
+{% endblock %}

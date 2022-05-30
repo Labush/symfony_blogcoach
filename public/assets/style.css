@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    /* position:absolute !important; */
+    bottom: 0 !important;
+    width: 100% !important;
+    /* font-weight: bold; */
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    background-color: #262626;
+    border-top: solid 1px #33b5e5 !important;
+}
+
+/****************/
+#call {
+    color: #fbfbfb;
+    padding-top: 375px;
+}
+
+#titre_call {
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 3px !important;
+    font-size: 130px !important;
+    color: #33b5e5;
+}
+
+#titre_call_ombre {
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 3px !important;
+    font-size: 130px !important;
+    margin-top: -161px;
+    margin-left: 4px;
+}
+
+#btn_call {
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 3px !important;
+    font-size: 20px !important;
+}
+
+/*****************************/
+.send {
+    margin-top: -61px !important;
+    float: right !important;
+    margin-right: 90px !important;
+}
+
+#newsletter_effect {
+    text-decoration: underline;
+    text-decoration-color: #EFE356;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 4px;
+}
+
+.navbar {
+    background-color: #fbfbfb !important;
+    color: #262626 !important;
+}
+
+.navbar-brand {
+    color: #262626 !important;
+    font-size: 26px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 7px !important;
+    font-family: 'Koulen', cursive !important;
+}
+
+.bg_home {
+    height: 700px;
+    background-position-y: -20px;
+}
+
+/****************/
+.div_slogan {
+    /* height:700px; */
+    text-align: center !important;
+    padding-bottom: 100px;
+}
+
+.slogan {
+    text-align: center !important;
+    margin-top: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px !important;
+    font-size: 80px;
+    color: #262626;
+    font-family: 'Koulen', cursive !important;
+}
+
+.div_adj {
+    margin-top: 50px;
+    font-size: 35px;
+    font-family: 'Koulen', cursive !important;
+    color: #EFE356 !important;
+    letter-spacing: 2px !important;
+}
+
+.adj {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #262626;
+}
+
+#adj_center {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.div_adj_2 {
+    color: #262626;
+    margin-top: 20px;
+    font-family: 'Koulen', cursive !important;
+}
+
+/****************/
+.bg-nav-item {
+    background-color: #262626 !important;
+    color: #fbfbfb !important;
+    font-size: 21px !important;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 2.5px !important;
+}
+
+.active {
+    background-color: #fbfbfb !important;
+    color: #33b5e5 !important;
+}
+
+.div_services {
+    width: 80% !important;
+    margin-left: 10.5%;
+    height: 650px;
+}
+
+.tab-pane {
+    background-color: white !important;
+    color: #262626 !important;
+    font-size: 19px !important;
+}
+
+/**/
+.carte-service {
+    width: 350px !important;
+    float: left;
+    margin-left: 17px;
+}
+
+.card-descr {
+    width: 800px;
+    height: 460px;
+    float: right;
+    /* background-color: #262626; */
+    margin-right: 0.7%;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.descr-text{
+    /* color: #fbfbfb !important; */
+    padding: 74px;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    transition-duration: 0.3s;
+}
+.card-title {
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 2px !important;
+    font-size: 25px;
+    color: #262626 !important;
+}
+
+/***************/
+.div_ebook {
+    width: 1000px;
+    height: 500px;
+    background-color: #fbfbfb;
+    margin-left: 18.5%;
+    border: solid 3px #EFE356;
+
+    margin-top: 5px;
+    margin-bottom: 125px;
+}
+
+#titre_ebook {
+    text-align: center;
+    color: #262626;
+    font-size: 48px !important;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 3px !important;
+    padding: 25px;
+    padding-bottom: 5px;
+}
+
+#subtitre_ebook {
+    text-align: center;
+    color: #EFE356;
+    font-size: 48px !important;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 3px !important;
+    /* padding: 15px; */
+}
+
+.dl {
+    font-size: 30px !important;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 4px !important;
+    float: left;
+    margin-left: 1%;
+
+    margin-top: 75px;
+}
+
+/**/
+#idees_menu {
+    font-size: 50px !important;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 1px !important;
+    margin-top: 50px;
+    margin-left: 18.5%;
+    color: #262626;
+}
+
+#idees_effect {
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 1px !important;
+    font-size: 50px !important;
+
+    /* text-decoration: underline;
+    text-decoration-color: #262626;
+    text-decoration-thickness: 15px;
+    text-underline-offset: 4px; */
+}
+
+/*******************/
+.div_programmes {
+    margin-top: -30px !important;
+    padding-bottom: 80px !important;
+
+    background-color: #262626;
+}
+
+.carte-prog {
+    width: 400px !important;
+    margin-left: 5.7% !important;
+}
+
+#titre_prog {
+    margin-left: 4.2% !important;
+    color: #262626;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 1px !important;
+    font-size: 75px !important;
+    padding: 25px;
+    padding-bottom: 5px;
+}
+#titre_prog_deux {
+    margin-left: 4.2% !important;
+    color: #fbfbfb;
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 1px !important;
+    font-size: 50px !important;
+    padding: 25px;
+    padding-bottom: 5px;
+}
+
+#titre_service {
+    margin-left: -2.5% !important;
+    color: #262626;
+    /**33b5e5**/
+    font-family: 'Koulen', cursive !important;
+    letter-spacing: 1px !important;
+    font-size: 50px !important;
+    padding: 25px;
+    padding-bottom: 5px;
+}
+/*************/
+.card-footer{
+    text-align: center !important;
+}
+.bi-star-fill{
+    color: #33b5e5 !important;
+    width: 50px !important;
+}
