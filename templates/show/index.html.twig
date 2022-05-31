@@ -1,0 +1,26 @@
+{% extends 'base_blog_page.html.twig' %}
+
+{% block body %}
+	<br>
+	<div class="container">
+		<div class="img-fluid">
+			<img src="{{ article.image }}" alt="">
+		</div>
+
+		<div class="content">
+
+			<h2 class="card-title">{{ article.title}}</h2>
+
+			<p class="date">Publié le
+				{{ article.createdAt | date("d/m/Y") }}
+				à
+				{{ article.createdAt | date("H:i") }}
+			</p>
+
+
+			<p class="content text-justify">
+				{{ article.content }}
+			</p>
+		</div>
+	</div>
+{% endblock %}
