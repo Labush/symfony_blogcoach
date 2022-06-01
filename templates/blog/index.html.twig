@@ -14,20 +14,25 @@
 				<div class="card col-md-4" style="margin-top:30px;width:610px;margin-left:35px;">
 					<div
 						class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-						{# <img src="{{ article.image }}" alt="{{ article.image }}" class="img-fluid"/> #}
+						{# <img src="/assets/blog/images/{{ article.image }}" class="img-fluid"/> #}
 						<a href="#!">
 							<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
 						</a>
 					</div>
 					<div class="card-body">
-						<h5 class="card-title text-info">{{ article.title}}
-						</h5>
-						<p class="date">Publié le
+						<h3 class="card-title text-info">{{ article.title}}</h3>
+						<br>
+						<p>
+							Par
+							{{ article.author }},
+							
+														le
 							{{ article.createdAt | date("d/m/Y") }}
-							à
-							{{ article.createdAt | date("H:i") }}
 						</p>
-						<a href="{{ path('show', {'id':article.id})}}" class="btn btn-dark">En savoir plus</a>
+
+
+						<a href="{{ path('show', {'id':article.id})}}" class="btn btn-dark" style="font-size:15px;letter-spacing:3px;font-family: 'Koulen', cursive;">Lire</a>
+
 					</div>
 				</div>
 

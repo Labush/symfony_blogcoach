@@ -1,25 +1,28 @@
 {% extends 'base_blog_page.html.twig' %}
 
 {% block body %}
-	<br>
+	<br><br>
 	<div class="container">
-		<div class="img-fluid">
-			<img src="{{ article.image }}" alt="">
+		<div
+			class="img-fluid">{# <img src="/assets/blog/images/{{ article.image }}" alt=""> #}
 		</div>
 
 		<div class="content">
 
-			<h2 class="card-title">{{ article.title}}</h2>
+			<h1 class="card-title text-info text-center">{{ article.title}}</h1>
 
-			<p class="date">Publié le
+			<p class="content text-center">Ecrit et publié par
+				<span style="font-weight:bold;">{{ article.author}}</span>
+
+				le
 				{{ article.createdAt | date("d/m/Y") }}
 				à
 				{{ article.createdAt | date("H:i") }}
 			</p>
 
-
+			<br>
 			<p class="content text-justify">
-				{{ article.content }}
+				{{ article.content | raw}}
 			</p>
 		</div>
 	</div>
