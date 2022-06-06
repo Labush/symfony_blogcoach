@@ -6,11 +6,28 @@
 		Blog
 	</a>
 
-	<a href="/public" style="margin-right:1210px;" class="navbar-brand">
+	<a href="/public" style="margin-right:950px;" class="navbar-brand">
 		<button class="btn btn-dark" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">Accueil</button>
 	</a>
-</nav>
 
+	{% if app.user %}
+		<a href="{{ path('security_logout') }}" style="" class="navbar-brand">
+			<button class="btn btn-info" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">
+				Deconnexion
+				<i class="fas fa-user-alt"></i>
+			</button>
+		</a>
+	{% else %}
+		<a href="{{ path('security_login') }}" style="" class="navbar-brand">
+			<button class="btn btn-dark" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">
+				Se connecter
+				<i class="fas fa-user-alt"></i>
+			</button>
+		</a>
+	{% endif %}
+
+
+</nav>
 <style>
 	.navbar-brand {
 		color: #262626 !important;

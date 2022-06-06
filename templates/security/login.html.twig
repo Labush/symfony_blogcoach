@@ -1,0 +1,49 @@
+{% extends "base_blog.html.twig" %}
+
+{% block body %}
+
+	<div class="container">
+		<br>
+		<h1 class="text-center text-info">Se connecter</h1>
+
+		<form method="POST" action="">
+			<div class="mb-3">
+				<label for="email" class="form-label">Adresse electronique :</label>
+				<input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="_username">
+			</div>
+
+			<div class="mb-3">
+				<label for="password" class="form-label">Mot de passe :</label>
+				<input type="password" id="password" class="form-control" name="_password">
+			</div>
+			<br>
+			<button type="submit" class="btn btn-info btn_co">Connexion</button>
+		</form>
+	</div>
+
+
+	<div style="margin-top:200px;">
+		<h5 class="text-center">Pas encore inscrit ?</h5>
+		<a href="{{ path('security_register') }}" style="display:flex;justify-content:center;margin-left:22px;" class="navbar-brand">
+			<button class="btn btn-dark" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">
+				S'inscrire
+				<i class="fas fa-user-alt"></i>
+			</button>
+		</a>
+	</div>
+
+	<style>
+		.container {
+			font-family: 'Koulen', cursive;
+		}
+		.mb-3 {
+			color: black;
+			font-size: 20px;
+		}
+		.btn_co {
+			font-size: 18px !important;
+			letter-spacing: 7px !important;
+		}
+	</style>
+
+{% endblock body %}

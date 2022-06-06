@@ -1,0 +1,60 @@
+{% extends 'base_blog.html.twig' %}
+
+{% block title %}Hello SecurityController!
+{% endblock %}
+
+{% block body %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
+
+	<div class="example-wrapper">
+
+		{{ form_start(form)}}
+
+		{{ form_row(form.username, {'label':" ", 'attr':{
+			'placeholder':'Nom d\'utilisateur'
+		}})}}
+		{{ form_row(form.firstname, {'label':" ", 'attr':{
+			'placeholder':'Prenom'
+		}})}}
+		{{ form_row(form.lastname, {'label':" ", 'attr':{
+			'placeholder':'Nom'
+		}})}}
+		{{ form_row(form.email, {'label':" ", 'attr':{
+			'placeholder':'Adresse electronique'
+		}})}}
+		{{ form_row(form.password, {'label':" ", 'attr':{'placeholder':"Mot de passe"}})}}
+		{{ form_row(form.passwordConfirm, {'label':" ", 'attr':{'placeholder':"Confirmation du mot de passe"}})}}
+
+		<br>
+		<button type="submit" class="btn btn-info btn_inscription">S'inscrire</button>
+
+		{{ form_end(form)}}
+
+
+		<style>
+			.example-wrapper {
+				font-family: 'Koulen', cursive;
+				color: black;
+			}
+
+			::placeholder {
+				font-size: 19px !important;
+			}
+			.btn_inscription {
+				font-size: 18px !important;
+				letter-spacing: 7px !important;
+			}
+		</style>
+	</div>
+{% endblock %}
