@@ -11,12 +11,21 @@
 	</a>
 
 	{% if app.user %}
-		<a href="{{ path('security_logout') }}" style="" class="navbar-brand">
+
+		<a href="{{ path('admin') }}" style="margin-left:-200px;" class="navbar-brand">
+			<button class="btn btn-outline-info" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">
+				Espace admin
+				<i class="fas fa-user-alt"></i>
+			</button>
+		</a>
+
+		<a href="{{ path('security_logout') }}" class="navbar-brand">
 			<button class="btn btn-info" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">
 				Deconnexion
 				<i class="fas fa-user-alt"></i>
 			</button>
 		</a>
+
 	{% else %}
 		<a href="{{ path('security_login') }}" style="" class="navbar-brand">
 			<button class="btn btn-dark" style="font-size: 15px;font-family: 'Koulen', cursive;letter-spacing: 7px;">
